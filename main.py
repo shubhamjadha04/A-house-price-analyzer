@@ -43,6 +43,7 @@ class HousepriceAnalyser:
     def check_missing_values(self):
         print(self.df.isnull().sum())
 
+    
 
 
 
@@ -55,10 +56,11 @@ class HousepriceAnalyser:
 
 
 
-analyse = HousepriceAnalyser(r"C:\Users\shubham jadhao\OneDrive\Desktop\project\Bengaluru_House_Data.csv")
+
+analyse = HousepriceAnalyser(r"C:\Users\hansr\OneDrive\Documents\A-house-price-analyzer\Bengaluru_House_Data.csv")
 
 analyse.load_data()
-# analyse.explore_data()
+analyse.explore_data()
 analyse.check_missing_values()
 
 
